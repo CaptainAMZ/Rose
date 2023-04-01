@@ -1,0 +1,73 @@
+@media (min-width:600px){
+    .container{
+        width: 95%;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .bar{
+        flex: 1;
+    }
+
+    .bar_wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list{
+        display: inline;
+    }
+
+    .bar_header{
+        line-height: 3rem;
+        padding: 2rem 0;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .main{
+       flex: 3;
+    }
+    .intro{
+        padding: 8rem 3rem;
+    }
+
+    .intro_text{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .intro_guid{
+        font-size: 2rem;
+    }
+
+    .boxes{
+        flex-direction: row;
+    }
+
+    .boxes_box{
+        flex-basis: 50%;
+        padding: .5rem;
+    }
+
+    
+}
+
+@media (min-width:900px){
+
+    .container{
+        width: 90%;
+    }
+    
+    .intro{
+        padding: 10rem 3rem;
+    }
+
+    .box_picture--details > p{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    
+}
