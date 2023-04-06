@@ -6,12 +6,12 @@ const menu = document.querySelector(".mobile_menu")
 
 hamburger.addEventListener("click" , () => {
 
-        menu.style.display = "flex"
+        menu.classList.add("show")
         
 })
 closeBtn.addEventListener("click" , () => {
 
-        menu.style.display = "none"
+        menu.classList.remove("show")
         
 })
 
