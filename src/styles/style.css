@@ -24,7 +24,7 @@
 :root {
   --primary: rgb(1, 43, 85);
   --secondary: rgb(109, 130, 150);
-  --background-color: rgb(247, 248, 249);
+  --background-color: rgba(1, 43, 85, 0.2);
 }
 
 html {
@@ -37,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .container {
@@ -84,6 +85,66 @@ body {
 }
 .list_items--item {
   font-size: 1.6rem;
+  color: rgba(56, 80, 104, 0.849);
+}
+
+.list_items--item:hover {
+  color: var(--primary);
+}
+
+.mobile_menu--close {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close_btn {
+  width: 30px;
+}
+
+.mobile_menu {
+  padding: 20px 20px 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: white;
+  overflow: auto;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mobile_menu .list_title {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.mobile_menu .list_items--item {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.mobile_menu .icons {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15%;
+  border: 1px solid var(--background-color);
+}
+
+.mobile_menu .icons_icon {
+  margin: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(1, 43, 85, 0.2);
 }
 
 .intro {
